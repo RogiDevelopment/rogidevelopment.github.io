@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+  @apply font-body;
+}
+
+body {
+  @apply overflow-x-hidden transition-colors duration-200 ease-linear bg-light-50 text-dark-500;
+}
+.dark body {
+  @apply bg-dark-900 text-white;
+}
+
+.app {
+  min-height: 100vh;
+  @apply relative flex flex-col flex-nowrap;
+  .content {
+    @apply flex-1;
+  }
+}
+
+.pageChange-enter-active,
+.pageChange-leave-active {
+  transition: all 0.3s ease;
+}
+.pageChange-enter,
+.pageChange-leave-active {
+  opacity: 0;
+  transform: scale(1.05);
+  transform-origin: bottom;
+}
