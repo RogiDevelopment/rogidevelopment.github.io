@@ -12,6 +12,14 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
+      { name: 'theme-color', content: '#096BF1' },
+      { content: 'summary_large_image', name: 'twitter:card' },
+      {
+        hid: 'og_image',
+        name: 'og_image',
+        content: '/img/logo.png',
+        property: 'og:image',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -65,6 +73,7 @@ export default {
       },
       {
         code: 'ru',
+        iso: 'ru-RU',
         file: 'ru-RU.js',
         name: 'Русский',
       },
@@ -77,6 +86,9 @@ export default {
     lazy: true,
     langDir: 'locales/',
     defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

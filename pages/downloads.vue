@@ -80,6 +80,24 @@ export default Vue.extend({
       )
     ).data[0]
   },
+  head() {
+    return {
+      title: this.$t('pages.downloads.metaTitle').toString(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('pages.downloads.title').toString(),
+        },
+        {
+          hid: 'og_description',
+          name: 'og_description',
+          content: this.$t('pages.downloads.title').toString(),
+          property: 'og:description',
+        },
+      ],
+    }
+  },
 })
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="releases">
     <div class="releases__title">
-      <h1>Release Notes</h1>
+      <h1>{{ $t('pages.release_notes.title') }}</h1>
     </div>
     <div class="releases__list">
       <div v-for="release in releases" :key="release.id" class="release">
@@ -29,6 +29,24 @@ export default Vue.extend({
         'https://api.github.com/repos/IrisShaders/Iris/releases'
       )
     ).data
+  },
+  head() {
+    return {
+      title: this.$t('pages.release_notes.metaTitle').toString(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('pages.release_notes.title').toString(),
+        },
+        {
+          hid: 'og_description',
+          name: 'og_description',
+          content: this.$t('pages.release_notes.title').toString(),
+          property: 'og:description',
+        },
+      ],
+    }
   },
 })
 </script>

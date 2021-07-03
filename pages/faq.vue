@@ -20,6 +20,24 @@
 import Vue from 'vue'
 export default Vue.extend({
   name: 'FAQ',
+  head() {
+    return {
+      title: this.$t('pages.faq.metaTitle').toString(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('pages.faq.title').toString(),
+        },
+        {
+          hid: 'og_description',
+          name: 'og_description',
+          content: this.$t('pages.faq.title').toString(),
+          property: 'og:description',
+        },
+      ],
+    }
+  },
 })
 </script>
 

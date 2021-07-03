@@ -64,6 +64,24 @@ export default Vue.extend({
       ],
     }
   },
+  head() {
+    return {
+      title: this.$t('pages.gallery.metaTitle').toString(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('pages.gallery.description').toString(),
+        },
+        {
+          hid: 'og_description',
+          name: 'og_description',
+          content: this.$t('pages.gallery.description').toString(),
+          property: 'og:description',
+        },
+      ],
+    }
+  },
 })
 </script>
 

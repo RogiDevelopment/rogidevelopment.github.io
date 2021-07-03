@@ -37,17 +37,17 @@ export default {
           {
             title: 'Оптимизация теней',
             description:
-              "Using Iris's shadow frustum culling, you'll be able to reach higher frame rates without sacrificing the quality of volumetric lighting or shadows.",
+              'Используя технологию фрустум кулинга для теней Iris позволяет достичь лучшей производительности без влияния на качество освещения и теней.',
           },
           {
             title: 'Эффективный рендеринг сущностей',
             description:
-              'Iris improves the way that Minecraft renders entities and block entities like chests, pigs, and item frames.',
+              'Iris улучшает способ, которым Minecraft рендерит сущности и блоки-сущности, например сундуки, свиньи, и рамки предметов.',
           },
           {
             title: 'Современная архитектура',
             description:
-              'Iris has been built from the ground up to be extensible and easy to update. Say goodbye to weeks of waiting to use shaders on the new Minecraft version!',
+              'Iris был создан с нуля с упором на расширяемость и легкость обновления. Попрощайтесь с неделям ожидания, когда можно будет использовать шейдеры на последней версии Minecraft!',
           },
         ],
       },

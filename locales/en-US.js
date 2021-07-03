@@ -7,6 +7,7 @@ export default {
   },
   pages: {
     index: {
+      metaTitle: 'Iris Shaders',
       intro: {
         heading: 'Iris Shaders',
         description:
@@ -57,6 +58,7 @@ export default {
       },
     },
     downloads: {
+      metaTitle: 'Iris Downloads',
       title: 'Few clicks to get shaders',
       description:
         'We created the automated installer for our mod, it will automatically download and install Iris and Sodium for great graphics at smooth framerates.',
@@ -66,10 +68,12 @@ export default {
       manualTitle: 'You prefer manual installation? No problem.',
     },
     gallery: {
+      metaTitle: 'Iris Gallery',
       title: 'Photos made by Iris community',
       photo_copyright: 'by',
     },
     faq: {
+      metaTitle: 'Iris Help',
       title: "Let's help fix your problem",
       solutions: [
         {
@@ -117,6 +121,10 @@ export default {
           ],
         },
       ],
+    },
+    release_notes: {
+      metaTitle: 'Iris Release Notes',
+      title: 'Release Notes',
     },
   },
   footer: {

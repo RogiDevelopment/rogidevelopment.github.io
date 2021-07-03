@@ -146,6 +146,24 @@ export default Vue.extend({
       backgroundType: 1,
     }
   },
+  head() {
+    return {
+      title: this.$t('pages.index.metaTitle').toString(),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('pages.index.intro.description').toString(),
+        },
+        {
+          hid: 'og_description',
+          name: 'og_description',
+          content: this.$t('pages.index.intro.description').toString(),
+          property: 'og:description',
+        },
+      ],
+    }
+  },
   mounted() {
     const changeBackground = () => {
       if (this.$data.backgroundType >= 3) {
