@@ -163,7 +163,11 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .intro__wrapper {
   margin-top: -104px; // Compensate Navbar height, be sure to change it when navbar height changes.
-  @apply relative bg-primary-500 overflow-hidden;
+  @apply relative bg-dark-500 overflow-hidden;
+
+  * {
+    @apply transition-all ease-out;
+  }
 
   .intro__authors {
     @apply text-light-100 text-opacity-30 absolute p-4 bottom-0 z-30;
@@ -188,16 +192,14 @@ export default Vue.extend({
     @apply text-center relative my-auto z-20;
   }
   .intro__title h1 {
-    font-size: 5.5rem;
-    line-height: 1;
-    @apply font-bold text-primary-500;
+    @apply font-bold text-6xl sm:text-[5.5rem] text-primary-500;
   }
   .intro__title h2 {
     max-width: 60rem;
-    @apply relative mt-6 font-medium text-3xl text-light-100;
+    @apply relative mt-6 font-medium text-xl sm:text-3xl text-light-100;
   }
   .title__buttons {
-    @apply flex flex-row mt-6 gap-6 text-2xl;
+    @apply flex flex-col sm:flex-row mt-6 gap-2 sm:gap-6 text-xl;
     .button,
     a {
       @apply text-xl justify-center w-full;
@@ -209,10 +211,10 @@ export default Vue.extend({
   @apply flex my-16 p-8 justify-center flex-col max-w-screen-2xl mx-auto;
 
   .features__content {
-    @apply flex flex-row w-full gap-6 items-center;
+    @apply flex flex-col sm:flex-row w-full gap-6 items-center;
   }
   .features__content_reverse {
-    flex-direction: row-reverse;
+    @apply sm:flex-row-reverse;
     .features__image {
       @apply mr-auto ml-0;
     }
@@ -221,9 +223,7 @@ export default Vue.extend({
     @apply ml-auto;
   }
   .features__info h1 {
-    font-size: 4rem;
-    line-height: 1;
-    @apply font-bold mb-6 text-primary-500;
+    @apply font-bold text-4xl leading-tight md:text-[4rem] mb-6 text-primary-500;
   }
   .features__info p {
     @apply max-w-screen-sm font-medium text-2xl text-opacity-50 text-primary-800;
@@ -239,7 +239,7 @@ export default Vue.extend({
 .advantages {
   @apply bg-light-100 py-16 p-8;
   .advantages__items {
-    @apply flex flex-col md:flex-row justify-between max-w-screen-2xl mx-auto;
+    @apply flex flex-col gap-6 md:flex-row justify-between max-w-screen-2xl mx-auto;
     .advantages__item {
       flex: 0 1 352px;
       .advantages__icon {

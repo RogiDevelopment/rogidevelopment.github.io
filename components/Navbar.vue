@@ -88,29 +88,24 @@ export default Vue.extend({
     @apply px-6 max-w-screen-2xl m-auto flex flex-nowrap items-center;
   }
   .navbar-item {
-    @apply transition-colors duration-300 ease-in-out text-xl font-semibold text-light-300 ml-12 tracking-normal;
+    @apply transition-colors duration-300 ease-in-out text-xl font-semibold text-light-300 ml-6 sm:ml-12 tracking-normal;
     &:hover {
       @apply text-primary-500;
     }
     &.button {
-      @apply text-xl font-semibold ml-8 py-2.5 px-9 tracking-normal text-light-100;
+      @apply text-xl font-semibold ml-0 py-2 px-5 sm:ml-8 sm:py-2.5 sm:px-9 tracking-normal text-light-100;
     }
   }
 
   .navbar-mobile {
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-
-    @apply transition p-6 ease-out transform-gpu z-50 backdrop-filter backdrop-blur-sm bg-dark-600 bg-opacity-80 fixed;
+    @apply fixed backdrop-filter backdrop-blur-md bg-dark-800 bg-opacity-60 inset-0 z-40;
   }
   .navbar-mobile__container {
     @apply flex flex-col flex-shrink items-center h-full justify-center;
   }
 
   .navbar-item_mobile {
-    @apply transition-all ease-out duration-100 text-4xl font-semibold text-light-100 tracking-normal p-2 w-3/4 sm:w-1/2;
+    @apply transition-all ease-out duration-100 text-3xl sm:text-4xl font-semibold text-light-100 tracking-normal p-2 w-3/4 sm:w-1/2;
     &:hover {
       @apply text-primary-500 ml-12;
     }

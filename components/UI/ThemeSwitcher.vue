@@ -29,7 +29,10 @@ export default Vue.extend({
 
 <style lang="scss">
 .switcher {
-  @apply cursor-pointer p-4 bg-primary-500 text-light-50 rounded-full shadow-2xl;
+  @apply cursor-pointer p-3 sm:p-4 bg-primary-500 text-light-50 rounded-full shadow-2xl;
+  svg {
+    @apply text-base sm:text-[1em];
+  }
 }
 
 .dark .switcher {

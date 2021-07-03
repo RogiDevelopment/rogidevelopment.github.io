@@ -59,6 +59,8 @@ export default Vue.extend({
         'kinzuu_music',
         'llrluis',
         'Ultra',
+        'Islanzi',
+        'Skyy',
       ],
     }
   },
@@ -82,7 +84,7 @@ export default Vue.extend({
         @apply scale-105;
       }
       img {
-        @apply h-full;
+        @apply w-full md:h-full;
       }
       .gallery__author {
         bottom: 0;
@@ -94,14 +96,14 @@ export default Vue.extend({
 }
 
 .overlay {
-  @apply fixed flex justify-center inset-0 backdrop-filter backdrop-blur-md bg-dark-700 bg-opacity-60 z-50;
+  @apply fixed flex backdrop-filter backdrop-blur-md bg-dark-800 bg-opacity-60 inset-0 z-40;
   img {
     height: fit-content;
     width: 100%;
     @apply m-auto;
   }
   .overlay__author {
-    @apply absolute text-light-50 left-0 top-0 m-6;
+    @apply absolute text-light-50 text-xl left-0 bottom-0 m-6;
   }
   .overlay__exit {
     @apply text-2xl text-light-50 absolute right-0 top-0 m-6;

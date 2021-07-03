@@ -12,8 +12,7 @@
 
 <style lang="scss">
 .title-divider {
-  font-size: 5.5rem;
-  @apply flex justify-center py-12 font-bold text-primary-500;
+  @apply flex text-5xl sm:text-[5.5rem] text-center justify-center px-6 py-12 font-bold text-primary-500;
   &.title-divider_advantages {
     @apply bg-light-100;
   }
@@ -23,7 +22,7 @@
   position: fixed;
   right: 0;
   bottom: 0;
-  @apply p-6 z-50;
+  @apply flex flex-col items-center p-4 sm:p-6 z-50;
 }
 
 .dark .title-divider.title-divider_advantages {

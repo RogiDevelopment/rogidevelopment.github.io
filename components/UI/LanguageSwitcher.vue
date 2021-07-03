@@ -53,7 +53,7 @@ export default Vue.extend({
 
 <style lang="scss">
 .languages-overlay {
-  @apply fixed backdrop-filter backdrop-blur-md bg-dark-800 bg-opacity-60 inset-0 z-50;
+  @apply fixed backdrop-filter backdrop-blur-md bg-dark-800 bg-opacity-60 inset-0 z-40;
   .languages-overlay__list {
     @apply h-full flex flex-col items-center justify-center;
     a {
@@ -72,7 +72,10 @@ export default Vue.extend({
 }
 
 .language-switcher {
-  @apply cursor-pointer p-4 bg-primary-500 text-light-50 rounded-full shadow-2xl;
+  @apply cursor-pointer p-3 sm:p-4 bg-primary-500 text-light-50 rounded-full shadow-2xl;
+  svg {
+    @apply text-base sm:text-[1em];
+  }
 }
 
 .dark .language-switcher {

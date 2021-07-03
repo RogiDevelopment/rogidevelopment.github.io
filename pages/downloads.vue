@@ -88,7 +88,7 @@ export default Vue.extend({
   min-height: 60vh;
   @apply m-auto max-w-screen-2xl p-16;
   .downloads__header {
-    @apply flex xl:flex-row flex-col-reverse items-center h-full;
+    @apply flex xl:flex-row flex-col-reverse text-center xl:text-justify items-center h-full;
     .downloads__info {
       @apply max-w-xl;
       h1 {
@@ -125,7 +125,7 @@ export default Vue.extend({
       @apply text-primary-500 text-5xl font-semibold text-center;
     }
     .alt-downloads__buttons {
-      @apply flex flex-row mt-16 w-full gap-6;
+      @apply flex flex-col sm:flex-row mt-16 w-full gap-6;
       .button {
         @apply w-full justify-center;
       }
