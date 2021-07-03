@@ -38,7 +38,7 @@
         <p class="flex flex-row items-center">
           <UserCircleIcon size="0.9x" />
           &nbsp;{{ $t('footer.copyright[1]') }}&nbsp;
-          <a href="http://gtihub.com/rogi27">Rogi27</a>
+          <a href="https://github.com/rogi27">Rogi27</a>
         </p>
       </div>
     </div>
