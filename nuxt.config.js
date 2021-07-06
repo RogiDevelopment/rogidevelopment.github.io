@@ -17,8 +17,14 @@ export default {
       {
         hid: 'og_image',
         name: 'og_image',
-        content: '/img/logo.png',
+        content: '/img/logo.webp',
         property: 'og:image',
+      },
+      {
+        hid: 'twitter_image',
+        name: 'twitter_image',
+        content: '/img/logo.webp',
+        property: 'twitter:image',
       },
     ],
     link: [

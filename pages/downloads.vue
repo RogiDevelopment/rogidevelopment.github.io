@@ -24,7 +24,7 @@
           />
         </div>
         <div class="downloads__image">
-          <img src="/img/installer.png" />
+          <img src="/img/installer.webp" />
         </div>
       </div>
     </div>

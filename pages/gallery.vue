@@ -2,7 +2,7 @@
   <div>
     <transition name="pageChange">
       <div v-if="currentImage !== null" class="overlay">
-        <img :src="`/img/gallery/${currentImage}.png`" />
+        <img :src="`/img/gallery/${currentImage}.webp`" />
         <div class="overlay__author">
           <p>
             {{ $t('pages.gallery.photo_copyright') }} <b>{{ currentImage }}</b>
@@ -24,7 +24,7 @@
           class="gallery__image"
           @click="currentImage = item"
         >
-          <img :src="`/img/gallery/${item}.png`" />
+          <img :src="`/img/gallery/${item}.webp`" />
           <div class="gallery__author">
             <p>
               {{ $t('pages.gallery.photo_copyright') }} <b>{{ item }}</b>

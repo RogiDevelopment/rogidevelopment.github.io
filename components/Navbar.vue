@@ -2,7 +2,7 @@
   <nav class="navbar" :class="{ navbar_intro: $route.name == 'index' }">
     <div class="navbar-inner">
       <div class="flex flex-grow-0 navbar-logo">
-        <NuxtLink to="/"> <img class="h-14" src="/logo.png" /> </NuxtLink>
+        <NuxtLink to="/"> <img class="h-14" src="/logo.webp" /> </NuxtLink>
       </div>
       <div class="flex flex-row items-center ml-auto">
         <NuxtLink

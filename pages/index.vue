@@ -6,21 +6,21 @@
           v-if="backgroundType == 1"
           :key="1"
           class="intro__background"
-          style="background-image: url('/img/b1.png')"
+          style="background-image: url('/img/b1.webp')"
         />
 
         <div
           v-if="backgroundType == 2"
           :key="2"
           class="intro__background"
-          style="background-image: url('/img/b2.png')"
+          style="background-image: url('/img/b2.webp')"
         />
 
         <div
           v-if="backgroundType == 3"
           :key="3"
           class="intro__background"
-          style="background-image: url('/img/b3.png')"
+          style="background-image: url('/img/b3.webp')"
         />
       </transition>
       <div class="intro__authors">
@@ -67,9 +67,9 @@
         <div class="features__image">
           <img
             v-if="$colorMode.value === 'light'"
-            src="/img/optifineiris_light.png"
+            src="/img/optifineiris_light.webp"
           />
-          <img v-else src="/img/optifineiris_dark.png" />
+          <img v-else src="/img/optifineiris_dark.webp" />
         </div>
       </div>
     </div>
@@ -84,9 +84,9 @@
         <div class="features__image">
           <img
             v-if="$colorMode.value === 'light'"
-            src="/img/sodiumiris_light.png"
+            src="/img/sodiumiris_light.webp"
           />
-          <img v-else src="/img/sodiumiris_dark.png" />
+          <img v-else src="/img/sodiumiris_dark.webp" />
         </div>
       </div>
     </div>
